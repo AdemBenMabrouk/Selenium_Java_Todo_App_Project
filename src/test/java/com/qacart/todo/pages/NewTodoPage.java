@@ -3,7 +3,6 @@ package com.qacart.todo.pages;
 import com.qacart.todo.base.BasePage;
 import com.qacart.todo.config.Endpoint;
 import com.qacart.todo.utils.ConfigUtils;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

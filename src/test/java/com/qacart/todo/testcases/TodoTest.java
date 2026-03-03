@@ -2,15 +2,13 @@ package com.qacart.todo.testcases;
 import com.qacart.todo.api.RegisterApi;
 import com.qacart.todo.api.TasksApi;
 import com.qacart.todo.base.BaseTest;
-import com.qacart.todo.pages.LoginPage;
 import com.qacart.todo.pages.TodoPage;
-import com.qacart.todo.utils.ConfigUtils;
 import io.qameta.allure.Feature;
-import io.restassured.http.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
+
+
 @Feature("Tasks feature")
 public class TodoTest extends BaseTest {
     @Feature("Add a task")
