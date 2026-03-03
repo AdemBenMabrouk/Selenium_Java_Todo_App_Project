@@ -41,7 +41,7 @@ public class BaseTest {
     public void tearDown(ITestResult result)  {
         //returns the testcase name after execution
         String testCaseName = result.getMethod().getMethodName();
-        File destFile = new File("target"+ File.separator + "screenshots" + File.separator+ testCaseName + ".png" );
+        File destFile = new File("src/test/java/com/qacart/todo"+ File.separator + "screenshots" + File.separator+ testCaseName + ".png" );
         takeScreenShot(destFile);
         getDriver().quit();
     }
