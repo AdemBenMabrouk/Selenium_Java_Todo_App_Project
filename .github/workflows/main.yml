@@ -16,4 +16,11 @@ jobs:
           cache: maven
           distribution : "temurin"
       - uses: browser-actions/setup-chrome@latest
+      - name: Create production.properties file
+        shell: bash
+        run: |
+            # Navigate to the specific package folder and create the file
+            echo "BaseUrl=${{ secrets.BASEURL }}" >> src/test/java/com/qacart/todo/config/production.properties
+            echo "email=${{ secrets.EMAIL }}" >> src/test/java/com/qacart/todo/config/production.properties
+            echo "password=${{ secrets.PASSWORD }}" >> src/test/java/com/qacart/todo/config/production.properties
       - run: mvn clean test
